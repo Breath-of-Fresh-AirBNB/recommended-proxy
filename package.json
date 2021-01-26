@@ -1,0 +1,28 @@
+{
+  "name": "recommended-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Breath-of-Fresh-AirBNB/recommended-proxy.git"
+  },
+  "keywords": [],
+  "author": "Paula Herrera <herrera.paula5@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Breath-of-Fresh-AirBNB/recommended-proxy/issues"
+  },
+  "homepage": "https://github.com/Breath-of-Fresh-AirBNB/recommended-proxy#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.1",
+    "http-proxy-middleware": "^1.0.6",
+    "morgan": "^1.10.0"
+  }
+}
