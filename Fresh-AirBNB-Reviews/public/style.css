@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Cereal Extra Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealLight.ttf');
+}
+@font-face {
+  font-family: 'Cereal Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealMedium.ttf');
+}
+@font-face {
+  font-family: 'Cereal Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBlack.ttf');
+}
+@font-face {
+  font-family: 'Cereal Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBook.ttf');
+}
+
+/* fonts */
+.paragraphs {
+  font-family: 'Cereal Medium';
+}
+.date {
+  font-family: 'Cereal Light';
+}
+.user {
+  font-family: 'Cereal Bold';
+}
+.rating {
+  font-family: 'Cereal Book';
+}
+
+/* Overall Container for page */
+.container {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+/* first flex container for Ratings */
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.mostrecentreviews {
+  margin-bottom: 10px;
+  font-family: 'Cereal Bold';
+}
+.flex-item {
+  flex: auto;
+  padding: 5px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  width: 50%;
+}
+
+/* Container for reviews on main page */
+.flex-container-post {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px;
+  margin: 0;
+  border-radius: 15px;
+  border: 2px solid rgb(129, 129, 129);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* properties for each review */
+.flex-post {
+  width: 48%;
+  max-height: 400px;
+  padding-left: 4px;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  padding-top: 5px;
+  padding: 6px;
+  overflow: auto;
+}
+
+/* Modal reviews container */
+.flex-container-reviews {
+  display: block;
+  overflow: auto;
+  max-height: 400px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  border: solid rgb(129, 129, 129);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Properties for each button */
+.button {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: 'Cereal Bold' !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  border: solid rgb(129, 129, 129) !important;
+  background: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+  transition: .3s;
+}
+.button:hover {
+  background:rgb(255, 56, 92);
+  color: rgb(255, 255, 255);
+}
+.button:focus {
+  outline: none;
+}
+
+/* Add Reviews Modal */
+.addReview-form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.addReview-post {
+  resize: none;
+  width: 400px;
+  height: 200px;
+  border: solid rgb(129, 129, 129);
+  border-radius: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Cereal Medium';
+  outline: none;
+
+}
+.rating-box {
+  max-width: 30px;
+  border: solid rgb(129, 129, 129);
+  font-family: 'Cereal Medium';
+  border-radius: 4px;
+  outline: none;
+}
+.date-box {
+  max-width: 150px;
+  border-radius: 4px;
+  font-family: 'Cereal Medium';
+  border: solid rgb(129, 129, 129);
+}
+.name-box {
+  border-radius: 4px;
+  font-family: 'Cereal Medium';
+  border: solid rgb(129, 129, 129);
+}

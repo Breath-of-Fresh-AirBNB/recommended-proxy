@@ -1,0 +1,58 @@
+{
+  "name": "fresh-airbnb-reviews",
+  "version": "1.0.0",
+  "description": "Reviews section of Repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "seed": "node database/seed.js",
+    "test": "jest --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Breath-of-Fresh-AirBNB/Fresh-AirBNB-Reviews.git"
+  },
+  "author": "Randal Schneider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Breath-of-Fresh-AirBNB/Fresh-AirBNB-Reviews/issues"
+  },
+  "homepage": "https://github.com/Breath-of-Fresh-AirBNB/Fresh-AirBNB-Reviews#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "eslint-plugin-jest": "^24.1.3",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "lorem-ipsum": "^2.0.3",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.11",
+    "mysql": "^2.18.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
