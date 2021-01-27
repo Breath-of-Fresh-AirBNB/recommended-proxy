@@ -1,0 +1,347 @@
+@font-face {
+  font-family: 'Cereal Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBlack.ttf');
+}
+@font-face {
+  font-family: 'Cereal Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBook.ttf');
+}
+@font-face {
+  font-family: 'Cereal Extra Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealLight.ttf');
+}
+@font-face {
+  font-family: 'Cereal Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealMedium.ttf');
+}
+body {
+  font-family: 'Cereal Medium';
+}
+#nav {
+  display: flex;
+  background-color: white;
+}
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+}
+#searchBar:hover {
+  box-shadow: 3px 2px 2px darkgray;
+}
+#searchBar {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  border-color:lightgray;
+  border-width: 0.05%;
+  border-radius: 20px;
+  color: black;
+  display: inline;
+  font-family: 'Cereal Book';
+  cursor: pointer;
+}
+#right {
+  display: flex;
+  justify-content: end;
+}
+#hostLink:hover {
+  background-color: lightgray;
+}
+#hostLink {
+  border: solid;
+  border-color:transparent;
+  border-width: 0.05%;
+  border-radius: 20px;
+  color: black;
+  display: inline;
+  grid-column: 1;
+  font-family: 'Cereal Book';
+  max-width: fit-content;
+}
+#region:hover {
+  background-color: lightgray;
+}
+#region {
+  border: solid;
+  border-color:transparent;
+  border-width: 0.05%;
+  border-radius: 20px;
+  color: black;
+  display: inline;
+  grid-column: 2;
+  font-family: 'Cereal Book';
+  max-width:fit-content;
+  max-height:fit-content;
+  background-color: transparent;
+}
+#loginLink:hover {
+  box-shadow: 3px 2px 2px darkgray;
+}
+#loginLink {
+  border: solid;
+  border-color:lightgray;
+  border-width: 0.05%;
+  border-radius: 20px;
+  color: black;
+  grid-column: 3;
+  font-family: 'Cereal Book';
+  max-width: fit-content;
+  max-height:fit-content;
+  background: url('https://1000logos.net/wp-content/uploads/2017/08/Airbnb-Logo-500x181.png');
+}
+.home:on-click {
+  border: solid;
+  border-color: transparent;
+}
+.home {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+#title {
+  display: inline;
+  font-family: 'Cereal Black';
+  max-width: 100%;
+  max-height: 100%;
+}
+.infoBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.star {
+  color: #FD385C;
+}
+#ratingLocation {
+  display: inline;
+  font-family: 'Cereal Book';
+  grid-column: 1/2;
+  cursor: pointer;
+  color: gray;
+}
+#location {
+  text-decoration: underline;
+}
+#upload, #heart {
+  margin-right: 2px;
+}
+#shareSave {
+  display: inline;
+  font-family: 'Cereal Book';
+  grid-column: 3;
+}
+#share:hover {
+  background-color: lightgray;
+}
+#share {
+  margin-right: 5px;
+  border-color: transparent;
+  color: black;
+}
+#save:hover {
+  background-color: lightgray;
+}
+#save {
+  border-color: transparent;
+  color: black;
+}
+#photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-top:10px;
+}
+.img-fluid {
+  max-width: 100%;
+  cursor: pointer;
+}
+#p1 {
+  border-radius: 15px 0px 0px 15px;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  object-fit: cover;
+}
+#p2 {
+  grid-column: 3;
+  grid-row: 1;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+}
+#p3 {
+  border-radius: 0px 15px 0px 0px;
+  grid-column: 4;
+  grid-row: 1;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+}
+#p4 {
+  grid-column: 3;
+  grid-row: 2;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+}
+#p5 {
+  border-radius: 0px 0px 15px 0px;
+  grid-column: 4;
+  grid-row: 2;
+  object-fit: cover;
+  height:100%;
+  width: 100%;
+}
+#allPhotos:hover {
+  background-color: lightgray;
+}
+#allPhotos {
+  border-color: darkgray;
+  color: black;
+  max-width: fit-content;
+}
+#allGrid {
+  padding: 3%;
+}
+.infoBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+#AllShare:hover {
+  background-color: lightgray;
+}
+#AllShare {
+  display: inline;
+  margin-right: 5px;
+  border: solid;
+  border-color:transparent;
+  border-width: 0.05%;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+#AllSave:hover {
+  background-color: lightgray;
+}
+#AllSave {
+  display: inline;
+  border: solid;
+  border-color:transparent;
+  border-width: 0.05%;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+#a {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  object-fit: cover;
+}
+#b, #c {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  object-fit: cover;
+}
+#allGrid {
+  padding: 0px;
+}
+.left {
+  cursor: pointer;
+}
+.right {
+  display: inline;
+}
+#locationDescription {
+  font-family: 'Cereal Light';
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+/* Extra small devices (phones, 743px and down) */
+@media only screen and (max-width: 743px) {
+  .photoInfoBar {
+    display: inline;
+  }
+󠀼
+  #back {
+    display: inline;
+    justify-content: flex-start;
+    font-family: Cereal Book;
+    border: solid;
+    border-color:transparent;
+    background-color: transparent;
+    margin-right: 50%;
+  }
+  #backLeft {
+    margin: 7px;
+    cursor: pointer;
+  }
+  #photoShare:hover {
+    background-color: lightgray;
+  }
+  #photoShare {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 50%;
+    border: solid;
+    border-color:transparent;
+    border-width: 0.05%;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  #photoSave:hover {
+    background-color: lightgray;
+  }
+  #photoSave {
+    display: inline;
+    justify-content: flex-end;
+    border: solid;
+    border-color:transparent;
+    border-width: 0.05%;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 744px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 950px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1127px) {
+}
