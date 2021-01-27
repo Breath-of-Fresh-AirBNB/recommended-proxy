@@ -37,10 +37,12 @@
 body {
   font-family: 'Cereal Medium';
 }
+
 #nav {
   display: flex;
   background-color: white;
 }
+
 #logo {
   display: flex;
   justify-content: flex-start;
@@ -62,6 +64,7 @@ body {
   display: inline;
   font-family: 'Cereal Book';
   cursor: pointer;
+
 }
 #right {
   display: flex;
@@ -345,3 +348,4 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1127px) {
 }
+

@@ -1,0 +1,10 @@
+.mainContainer #listingDetails,
+.mainContainer #booking,
+.mainContainer #reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
