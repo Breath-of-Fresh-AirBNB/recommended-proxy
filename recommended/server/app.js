@@ -1,13 +1,10 @@
 import express from 'express';
 
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const Home = require('../database/homeSchema.js');
 const Activity = require('../database/activitySchema.js');
 
 const app = express();
-
-app.use(cors());
 app.use(express.static('dist'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
