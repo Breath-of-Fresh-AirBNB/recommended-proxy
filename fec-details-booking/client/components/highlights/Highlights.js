@@ -116,6 +116,7 @@ function Highlights(props) {
     houseRules,
   };
   const highlightObjs = _.map(highlightProps, (val, key) => (val ? highlights[key] : highlights[`${key}False`] || null));
+
   const RenderHighlights = () => {
     const list = highlightObjs.map((val, i) => {
       if (val) {

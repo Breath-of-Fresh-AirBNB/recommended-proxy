@@ -37,6 +37,7 @@
     "pstree.remy": "^1.1.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "underscore": "^1.12.0"
   },
   "devDependencies": {

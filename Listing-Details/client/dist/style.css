@@ -301,7 +301,7 @@ body {
   #back {
     display: inline;
     justify-content: flex-start;
-    font-family: Cereal Book;
+    font-family: 'Cereal Book';
     border: solid;
     border-color:transparent;
     background-color: transparent;
