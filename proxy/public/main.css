@@ -1,12 +1,9 @@
-.mainContainer #listingDetails,
-.mainContainer #booking,
-.mainContainer #reviews {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
+.mainContainer #Kyle,
+.mainContainer #Javan,
+.mainContainer #Randal {
+  width: 75%;
   margin: 0 auto 0 auto;
-  background-color: white !important;
+  background-color: white!important;
 }
 
 body {
